@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<!-- with bootstrap; jQuery; Axios AJAX -->
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+    <!-- Personal Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid align-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #f09b58;">
+      <a class="navbar-brand" href="index.html">Yellow Jacket Travel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="todo.html">Things to Do</a>
+          <a class="nav-item nav-link" href="eat.html">Places to Eat</a>
+          <a class="nav-item nav-link active" href="eat.html">Atlanta History <span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </nav>
+  
+    <!--PHOENIX-->
+    <div class="row">
+      <div class="mx-auto mt-5 mb-5">
+        <img src="images/phoenix.jpg" class="img-fluid phoenix col-12 col-lg-5" alt="Atlanta is the phoenix rising from the ashes">
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="row justify-content-around text-justify">
+      <div class="col-11" id="history">
+        <h2 class="darkGreen">Atlanta's History</h2>
+        
+        <div class="col-md-12">
+          <div class="row">
+            <div class="timeline">
+              
+              <span class="timeline-label">
+                <span class="label label-primary">pre-1820</span>
+              </span>
+              
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                      <h4>1762</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>The Native American site, Standing Peachtree, situated at the border of the Creek and Cherokee territories was first mentioned in recorded history.</p>
+                  </div>
+                </div>
+              </div>
+
+              <span class="timeline-label">
+                <span class="label label-primary">1820-1859</span>
+              </span>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1821</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>The Creek Indians cede their land to the United States.  This land is now the metro Atlanta area.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                      <h4>1836</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>The terminus of the planned Western and Atlantic Railroad is marked.  This spot was located near today's Five Points neighbrhood.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1842</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>The Terminus settlement is incorporated as Marthasville.  Named after the daughter of Governor Wilson Lumpkin.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                      <h4>1847</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>Atlanta is incorporated.  </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1854</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Atlanta and La Grange Railroad connects Atlanta with the southwest.  This helps make Atlanta the rail hub for the South with connections to the northwest, east, southeast and southwest.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <span class="timeline-label">
+                <span class="label label-primary">1860-1889</span>
+              </span>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                      <h4>1861-1865</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>The American Civil War.  As a major railroad and supply hub in the South, Atlanta plays a pivotal role in the war.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1863</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>President Abraham Lincoln signs the Emancipation Proclamation, freeing over 3 million slaves nationally.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">January 1</p>
+                  </div>
+                </div>
+              </div>              
+              
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1864</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Battle of Atlanta, part of the Union's Atlanta Campaign is fought.  Although a major win for the Union army, the Confederacy still maintained control of the city until September 1.</p>
+                  </div>
+                  <div class="timeline-footer mb-3">
+                    <p class="text-right">July 22</p>
+                  </div>
+                  <div class="timeline-body">
+                    <p>During the Battle of Jonesboro Union General William Tecumseh Sherman cuts off the last supply line to Atlanta, forcing Confederate General John Bell Hood to abandon the city.</p>
+                  </div>
+                  <div class="timeline-footer mb-3">
+                    <p class="text-right">August 31-September 1</p>
+                  </div>
+                  <div class="timeline-body">
+                      <p>General Sherman's troops burn Atlanta to the ground, sparing only churches and hospitals.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">November 11</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                      <h4>1865</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>The American Civil War ends.  President Andrew Johnson officially declares the end of the war.</p>
+                  </div>
+                  <div class="timeline-footer mb-3">
+                    <p class="text-right">May 9</p>
+                  </div>
+                  <div class="timeline-body">
+                      <p>Atlanta University is founded.  This was Atlanta's first college to serve African-American studends.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1868</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Atlanta becomes the state capital of Georgia.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                      <h4>1880</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p>Atlanta surpasses Savannah to become Georgia's largest city.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1885</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Governor Henry D. McDaniel signs the bill founding the Georgia School of Technology, now named the Georgia Institute of Technology.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">October 13</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1886</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>The first Coca-Cola is sold at Jacob's Pharmacy.  The development of Coca-Cola was in response to Atlanta and Fulton County becoming "dry".  Coca-Cola was a substitute for a previous coca wine (alcohol and cocaine) created by John Pemberton.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">May 8</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1887</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Inman Park is the first planned suburb of Atlanta.</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1889</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>The Georgia State Capitol building opens.  The dome was originally constructed of terra cotta and tin.  A 1958 renovation gave the building the gold leaf gilding that it's recognized for today.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">xxxxx</p>
+                  </div>
+                </div>
+              </div>
+
+              <span class="timeline-label">
+                  <span class="label label-primary">1890-1939</span>
+              </span>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1895</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Booker T. Washington delivers his "Atlanta Compromise" speech during the Cotton States and International Exposition</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">September 18</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1906</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Atlanta Race Riot of 1906.  Tensions between black and white workers were high as many flocked to Atlanta in search of employment.  On September 22 the Atlanta Georgia and Atlanta News reported on the alledged rape of four white women by black men.  By the end of the riot it is believed that 27 people died.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">September 22-24</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1917</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>The Great Atlanta Fire of 1917.  Beginning the morning of May 21 four separate fires broke out throughout Atlanta.  When crews arrived at the fourth fire they found a stack of burning mattresses but were not equipped to put it out.  The fire quickly spread.  By the time the fire was put out it had travelled over a mile to the north of where it began, destroying everything in its path.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">May 21</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1936</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Techwood Homes, the nation's first public housing development was completed.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">August 15</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1939</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p><em>Gone With the Wind</em>, a film adaptation of Margaret Mitchell's novel premiered at Loew's Grand Theatre.  Mitchell was an Atlanta native and wrote her novel in her home located on Peachtree Street.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">December 15</p>
+                  </div>
+                </div>
+              </div>
+
+              <span class="timeline-label">
+                  <span class="label label-primary">1940-present</span>
+              </span>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1959</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Population of the Atlanta metropolitan area reaches 1 million.</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1973</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Maynard Holbrook Jackson Jr. is elected mayork of Atlanta, becoming the city's first black mayor, and any other major city in the South.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1992</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Bank of America Plaza, formerly NationsBank Plaza, is completed.  At the time of its completion it was the tallest U.S. building outside of New York and Chicago.  It is still the tallest building in the South.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>1996</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Atlanta was host to the 1996 Summer Olympics, officially the Games of the XXVI Olympiad and unofficially the Centennial Olympic Games.  A record 197 nations participated, all of the current members of the International Olympic Committee.</p>
+                  </div>
+                  <div class="timeline-footer">
+                    <p class="text-right">July 19-August 4</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-right timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>2005</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Hartsfield-Jackson Atlanta International Airport becomes the world's busiest airport in passenger traffic.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-item-left timeline-item-arrow-sm">
+                <div class="timeline-point timeline-point-blank"></div>
+                <div class="timeline-event timeline-event-default">
+                  <div class="timeline-heading">
+                    <h4>2011</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>In 1936 the nation's first public housing development was built in Atlanta, but in 2011 Atlanta became the first major U.S. city to completely remove all public housing developments.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    
+    <!-- FOOTER -->
+    <div class="footer text-center mt-5 darkGreen">
+      <h5>Yellow Jacket Travel</h5>
+      <p>Know Before You Go<br>
+    </div>
+    
+    
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
+    
+    <!--<script src="script.js"></script>-->
+  </body>
+</html>
